@@ -4,13 +4,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7a5d58e3-3a47-4abc-8b5a-6a1b60dfa556</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Anime_GAN.py</StartupFile>
+    <StartupFile>DataImporter.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Anime-GAN</Name>
     <RootNamespace>Anime-GAN</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>CondaEnv|CondaEnv|BJFU_deepLearning</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +24,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Anime_GAN.py" />
+    <Compile Include="DataImporter.py" />
+    <Compile Include="GAN.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|BJFU_deepLearning" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
